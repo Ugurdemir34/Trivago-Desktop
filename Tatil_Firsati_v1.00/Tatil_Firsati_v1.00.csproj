@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFBA84A7-702B-473C-8459-3B3131A1F947}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tatil_Firsati_v1._00</RootNamespace>
+    <AssemblyName>Tatil_Firsati_v1.00</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo-Puntarenas-Beach-favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\UĞUR\Desktop\Stuff\Survey_v1.00\Survey_v1.00\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Windows.1.8.0\lib\net40\GMap.NET.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Windows.1.8.0\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=1.7.6.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Windows.1.8.0\lib\net40\GMap.NET.WindowsPresentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.2\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.105.2\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.105.2\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.23.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.23\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel\AciklamaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AciklamaEkle.Designer.cs">
+      <DependentUpon>AciklamaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Benzer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Benzer.Designer.cs">
+      <DependentUpon>Benzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Bilgiler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Bilgiler.Designer.cs">
+      <DependentUpon>Bilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FirsatSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FirsatSil.Designer.cs">
+      <DependentUpon>FirsatSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiyatlar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiyatlar.Designer.cs">
+      <DependentUpon>Fiyatlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fırsat\FırsatBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fırsat\FırsatBul.Designer.cs">
+      <DependentUpon>FırsatBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\OtelBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\OtelBilgi.Designer.cs">
+      <DependentUpon>OtelBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fırsat\Teklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fırsat\Teklif.Designer.cs">
+      <DependentUpon>Teklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrivagoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrivagoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\YakinOtel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\YakinOtel.Designer.cs">
+      <DependentUpon>YakinOtel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MyOtel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MyOtel.Designer.cs">
+      <DependentUpon>MyOtel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Odaguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Odaguncelle.Designer.cs">
+      <DependentUpon>Odaguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OtelEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OtelEkle.Designer.cs">
+      <DependentUpon>OtelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OtelGuncelle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OtelGuncelle.Designer.cs">
+      <DependentUpon>OtelGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fırsat\Buyut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fırsat\Buyut.Designer.cs">
+      <DependentUpon>Buyut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\YorumDuzenle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\YorumDuzenle.Designer.cs">
+      <DependentUpon>YorumDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Yorumlar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Yorumlar.Designer.cs">
+      <DependentUpon>Yorumlar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel\AciklamaEkle.resx">
+      <DependentUpon>AciklamaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Benzer.resx">
+      <DependentUpon>Benzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Bilgiler.resx">
+      <DependentUpon>Bilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FirsatSil.resx">
+      <DependentUpon>FirsatSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiyatlar.resx">
+      <DependentUpon>Fiyatlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fırsat\FırsatBul.resx">
+      <DependentUpon>FırsatBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\OtelBilgi.resx">
+      <DependentUpon>OtelBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\Report1.rdlc" />
+    <EmbeddedResource Include="Fırsat\Teklif.resx">
+      <DependentUpon>Teklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\YakinOtel.resx">
+      <DependentUpon>YakinOtel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MyOtel.resx">
+      <DependentUpon>MyOtel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\Odaguncelle.resx">
+      <DependentUpon>Odaguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OtelEkle.resx">
+      <DependentUpon>OtelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OtelGuncelle.resx">
+      <DependentUpon>OtelGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fırsat\Buyut.resx">
+      <DependentUpon>Buyut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\YorumDuzenle.resx">
+      <DependentUpon>YorumDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Yorumlar.resx">
+      <DependentUpon>Yorumlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TrivagoDataSet.xsc">
+      <DependentUpon>TrivagoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrivagoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrivagoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrivagoDataSet.xss">
+      <DependentUpon>TrivagoDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guest kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mylogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelicon.png" />
+    <None Include="Resources\merkez.png" />
+    <None Include="Resources\havuzz.png" />
+    <None Include="Resources\wifii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alllist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ileri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-window-close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeni.ico" />
+    <None Include="Resources\kaydet.ico" />
+    <None Include="Resources\add_image1600.ico" />
+    <None Include="Resources\tik.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo-Puntarenas-Beach-favicon.ico" />
+    <None Include="Resources\refresh kopya.ico" />
+    <None Include="Resources\pencil kopya.ico" />
+    <None Include="Resources\percentage-icon-22992.ico" />
+    <None Include="Resources\printer kopya.ico" />
+    <None Include="Resources\25360.ico" />
+    <Content Include="Trivago.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\durbun.png" />
+    <None Include="Resources\sr.png" />
+    <None Include="Resources\cm.ico" />
+    <None Include="Resources\updt.png" />
+    <None Include="Resources\ykn.png" />
+    <None Include="Resources\bul.png" />
+    <None Include="Resources\homeee.png" />
+    <None Include="Resources\otelss.png" />
+    <None Include="Resources\partner.png" />
+    <None Include="Resources\hotel-benidorm%281%29.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
